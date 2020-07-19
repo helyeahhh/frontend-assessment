@@ -1,0 +1,194 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-row .col-3 {
+  flex: 25%;
+  max-width: 25%;
+}
+.flex-row .col-4 {
+  flex: 33.33%;
+  max-width: 33.33%;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.align-bottom {
+  margin-top: auto;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.padding-bottom-100 {
+  padding-bottom: 100px;
+}
+
+div.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  visibility: hidden;
+}
+div.panel img {
+  width: 150px;
+}
+
+div.panel.show {
+  max-height: 100%;
+  transition: max-height 0.3s ease-out;
+  visibility: visible;
+}
+
+div.panel div.text-left {
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+div.text-left div {
+  background-color: #D2E3FF;
+  margin: -20px 12% 20px;
+  padding: 40px;
+}
+div.text-left div p, div.text-left div ul {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  color: #fff;
+  max-width: 1920px;
+  margin-bottom: 50px;
+}
+header div#header {
+  background-image: url(../images/1920x650.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+}
+header h1 {
+  font-size: 85px;
+}
+header p {
+  font-size: 45px;
+}
+
+#main-section .card {
+  border: 1px solid #CCC;
+  border-radius: 20px;
+  font-size: 20px;
+  height: 100%;
+  margin: 0 20px;
+}
+#main-section .card .card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 40px;
+  height: 90%;
+}
+#main-section .card p {
+  padding: 10px 0px 20px;
+}
+#main-section button {
+  border: 2px solid #000;
+  border-radius: 25px;
+  background-color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-size: 22px;
+}
+
+#section-content h2 {
+  cursor: pointer;
+}
+
+@media all and (max-width: 768px) {
+  header div#header p {
+    font-size: 22px;
+  }
+
+  div.panel div.text-left {
+    position: relative;
+  }
+
+  .flex-row .col-3 {
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .flex-row .col-4 {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  div.panel.show, div.panel {
+    visibility: initial;
+  }
+}
+@media all and (max-width: 992px) {
+  #main-section .card {
+    font-size: 17px;
+  }
+  #main-section button {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 1200px) {
+  div#header h1 {
+    font-size: 45px;
+  }
+
+  div#header p {
+    font-size: 30px;
+  }
+}
+@media all and (max-width: 1600px) {
+  div.text-left div {
+    margin: -20px 0 20px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

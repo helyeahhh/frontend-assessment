@@ -1,0 +1,213 @@
+$defaultFont: Arial, Helvetica, sans-serif;
+$defaultFontSize: 18px;
+
+
+// Global Styles
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $defaultFont;
+    font-size: $defaultFontSize;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    
+    .col-3 {
+        flex: 25%;
+        max-width: 25%;
+    }
+    .col-4 {
+        flex: 33.33%;
+        max-width: 33.33%;
+    }
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.align-bottom {
+    margin-top: auto;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.padding-bottom-100 {
+    padding-bottom: 100px;
+}
+
+// Utility
+div.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    visibility: hidden;
+    img {
+        width: 150px;
+    }
+}
+
+div.panel.show {
+    max-height: 100%;
+    transition: max-height 0.3s ease-out;
+    visibility: visible;
+}
+
+div.panel div.text-left {
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+
+div.text-left div {
+    background-color: #D2E3FF;
+    margin: -20px 12% 20px;
+    padding: 40px;
+
+    p, ul {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+
+// Header styles
+header {
+    color: #fff;
+    max-width: 1920px;
+    margin-bottom: 50px;
+    div#header {
+        background-image: url(../images/1920x650.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-height: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+    h1 {
+        font-size: 85px;
+    }
+    p {
+        font-size: 45px;
+    }
+}
+
+// Section styles
+#main-section {
+    .card {
+        border: 1px solid #CCC;
+        border-radius: 20px;
+        font-size: 20px;
+        height: 100%;
+        margin: 0 20px;
+
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            padding: 20px 20px 40px;
+            height: 90%;
+        }
+        p {
+            padding: 10px 0px 20px;
+        }
+    }
+    button {
+        border: 2px solid #000;
+        border-radius: 25px;
+        background-color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        font-size: 22px;
+    }
+}
+
+#section-content h2 {
+    cursor: pointer;
+}
+
+// For Tablets 
+@media all and (max-width: 768px) {
+    header div#header {
+        p {
+            font-size: 22px;
+        }
+    }
+
+    div.panel div.text-left {
+        position: relative;
+    }
+    
+    .flex-row .col-3 {
+        flex: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .flex-row .col-4 {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    div.panel.show, div.panel {
+        visibility: initial;;
+    }
+}
+
+// For Laptops 
+@media all and (max-width: 992px) {
+    #main-section {
+        .card{
+            font-size: 17px;
+        }
+        button {
+            font-size: 18px;
+        }
+    }
+}
+
+// For Desktops
+@media all and (max-width: 1200px) {
+    div#header h1 {
+        font-size: 45px;
+    }
+    div#header p {
+        font-size: 30px;
+    }
+}
+@media all and (max-width: 1600px) {
+    div.text-left div {
+        margin: -20px 0 20px;
+    }
+}
