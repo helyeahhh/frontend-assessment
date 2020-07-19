@@ -1,40 +1,22 @@
-Introduction
----
-Thanks for taking the time to complete this frontend technical assessment. We will be focusing on software quality (scalability, readability, maintainability, etc.) and your eye for detail. You may include any libraries. Bonus points if SASS/LESS is used and jQuery is not used.
+<h1>Hello Good day!</h1>
+<b>Instructions:</b>
+<ul>
+  <li>Download Xampp or any application to open a Local server</li>
+  <li>Open Xampp Control Panel and start Apache</li>
+  <li>Download this project</li>
+  <li>Locate your Xampp folder and paste the project to htdocs folder</li>
+  <li>Access your localhost ex: <b>localhost/mindarc/index.html</b> to open and test the project</li>
+</ul>
 
-Exercise 1
----
-Build a responsive page based on the designs.
+<b>Note:</b>
+Both exercise 1 and 2 are in the same HTML which is the index.html I've applied the fetch API to read the Json file
 
-##### Requirements
-1. Match the designs exactly.
-2. Needs to be responsive.
+- Explain why the result of ('b' + 'a' + + 'a' + 'a').toLowerCase() is banana.
+<p style="background-color: #CCC">'b' + 'a' + + 'a' + 'a'</p>
+will be evaluated as 
+<p style="background-color: #CCC">('b') + ('a') + (+'a') + ('a')</p>
+(+'a') is attempting to convert 'a' to a number using the plus operator and 'a' is not a number and the result will be NaN which stands for Not a Number.
+<p style="background-color: #CCC">'b' + 'a' + NaN + 'a'</p>
+NaN will still have a regular concatenation and applying .toLowerCase() will give result to 'banana'
 
-##### Designs
-* exercise1-desktop.png
-* exercise1-mobile.png
-
-##### Assets
-* Desktop banner - http://via.placeholder.com/1920x650
-* Mobile banner - http://via.placeholder.com/600x600
-* Content images - http://via.placeholder.com/400x300
-
-Exercise 2
----
-Read the `data.json` file and display the data as tabs on desktop and an accordion on mobile.
-
-##### Requirements
-1. Display data in tabs on desktop.
-2. Display data in an accordion on mobile.
-3. Only 1 accordion/tab should be open at a time.
-4. Open the first accordion/tab on load.
-5. If the open accordion is selected, close it.
-
-###### Bonus points
-* Improve the user experience with meaningful animations/transitions.
-* Design and styling.
-* Explain why the result of `('b' + 'a' + + 'a' + 'a').toLowerCase()` is `banana`.
-
-Submission
----
-We recommend submitting your completed assessment as a forked repository. Please replace README content with instructions and relevant documentation.
+<b>That's all thank you and always keep safe!</b>
