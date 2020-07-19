@@ -11,7 +11,7 @@
 <b>Note:</b>
 Both exercise 1 and 2 are in the same HTML which is the index.html I've applied the fetch API to read the Json file
 
-Explain why the result of ('b' + 'a' + + 'a' + 'a').toLowerCase() is banana.<br />
+Explain why the result of ('b' + 'a' + +'a' + 'a').toLowerCase() is banana.<br />
 <b>'b' + 'a' + + 'a' + 'a'</b><br />
 will be evaluated as <br />
 <b>('b') + ('a') + (+'a') + ('a')</b><br />
